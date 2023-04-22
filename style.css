@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Raleway:wght@500&family=Tangerine:wght@700&display=swap');
+
+body {
+    width: 100%;
+    height: 720px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(img/background.jpg);
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+}
+
+.read-font {
+    font-family: 'Gilda Display', serif;
+}
+
+.animate-fadeOutDown {
+    animation-name: fadeOutDown;
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+#page {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
